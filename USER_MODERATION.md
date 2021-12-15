@@ -25,3 +25,15 @@ The following states are available (sending the integer to the `moderate` entry 
 When the `moderate` entry point is called, it will associate a Flag to a tezos address. The account will then be flagged on its profile with a message corresponding to the flag associated with them. By default, Users have a flag set to `NONE`. Users with a flag set to `NONE` don't have a flag banner on their profile. Setting the flag to `NONE` through the contract will reset user's flag to their default value, and will make the banner disappear if any.
 
 If the flag of a user is set to `MALICIOUS`, then any Generative Token they will post will automatically flagged as `MALICIOUS`. As a result, it will be hidden from the front-end and have the appropriate banner associated with it if someone were to load its page.
+
+# Platform specific instructions
+
+## BCD
+
+1. Navigate to https://better-call.dev/mainnet/KT1CgsLyNpqFtNw3wdfGasQYZYfgsWSMJfGo/interact?entrypoint=moderate
+2. Enter the address to moderate and the state (see above for longer descriptions):
+   - 0: None
+   - 1: Review
+   - 2: Suspicious
+   - 3: Malicious
+3. Click execute and choose your wallet
